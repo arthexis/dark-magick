@@ -96,3 +96,14 @@ yet established a source artwork, artist, resolution, or rights status:
 **exact = 0; probable = 0; ready for visual comparison = 50**. The next pass
 must inspect each art area and compare it with externally attributable sources
 before recording any candidate as probable or exact.
+
+## Pass 4 — 2026-11-12 (visual batch 01–10 access audit)
+
+- Issue #1 and its recovery comment #6841833329 revalidated. `main` remained at `8a44fea710e6cab0413e2049f94c9a76f7596b4e`; feature branch initially `f37191aa70a58b96970760f001aa62d6c6e356c2`.
+- Tracker: 100 records, first 50 all `source_sheet_recovered` / `reference_ready_not_searched`. Extractor and source-search journal still in the branch.
+- The authentic original sheet was **already recovered in an earlier local TTS cache session**, SHA-256 `1a6070c3aadcc219b387fe46f8423f65b1282d00c6bccfbfc1740807c14c02c1`, 4180×4095. **Do not repeat that recovery**.
+- The 50 resulting `card-*.png` crops and contact sheet are **local, uncommitted**, and absent from the current session's available file mounts; remote repository workspace inspection was unavailable. The original Steam URL still cannot supply viewable image bytes in this session.
+- Searches by image *identifier* are not substitute reverse-image searches. A public image result was unrelated; it was **not** accepted as a candidate.
+- Cards #01–#10: no authentic pixels accessible for visual comparison here; all remain **not visually searched**, not `not_found`. Exact matches 0, probable 0, rights unknown.
+- Specific unblocking prerequisite: make a read-only copy of the **already recovered** `contact-sheet-50.jpg` and `card-01.png`–`card-10.png` available in a persistent accessible folder or as issue attachments (avoid adding unauthorized source art to Git history). Validate the manifest and SHA-256 before searching by art composition.
+- No card names used as image search terms or evidence; no source attribution or game content changes.
