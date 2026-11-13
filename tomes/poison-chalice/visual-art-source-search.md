@@ -47,3 +47,26 @@ Output: `build/poison-chalice-visual-reference/card-01.png` through `card-50.png
 ## Next batch
 
 Start with #01–#10 once the sprite is visible; use the contact sheet to search in sequential batches until #50. Keep unresolved items visible for later passes. Do not generate substitute artwork without separate authorization.
+
+## Pass 2 — 2026-11-12, 20:06 Monterrey (read-only source recovery)
+
+Repository revalidation: `main` HEAD `8a44fea710e6cab0413e2049f94c9a76f7596b4e`; feature branch before this evidence update `36a9c0551250b7ed896456c4c4c43490dd6cfdbc`. The feature tree includes the 100-card CSV, the source-search journal, and the extractor. CSV has 100 data rows and 24 headers; first 50 records remain `awaiting_source_image`.
+
+### Attempts and disposition
+
+- Original Steam face-sheet URL: publicly indexed URL and image endpoint attempted; unavailable from web fetch, and no valid image bytes were acquired. **Not a visual identification**.
+- Search by exact image UGC ID `1679241899324398994` and SHA-like path segment `5C11A2D50C1A71340C770FB2C516286AC37727DF`: no attributable copy recovered.
+- Steam Workshop searches for the game and version: generic or unrelated results. No verified card art.
+- Local ChatGPT file library: searched for `TS_Save_37.json`, original sheets, and Poison Legacy assets; nothing pertinent located.
+- 50 individual visual comparisons and reverse-image searches: **not performed**, because the visual reference image is missing.
+- Results remain exact=0; probable=0; unresolved=50. Source artist/rights/dimensions remain **unknown**. Do not promote any text-search result to a visual match.
+
+### Concrete recovery route for a previously loaded Tabletop Simulator mod
+
+On Windows check `%USERPROFILE%\\Documents\\My Games\\Tabletop Simulator\\Mods\\Images` for cached copies. The TTS save `TS_Save_37.json` may also help locate asset URLs. Search for the recorded face UGC identifier, or inspect images visually if filenames are hashed. Use a **copy** of a matching sheet; do not overwrite cache files.
+
+When a real sheet is recovered, run `python tools/poison_chalice_extract_reference.py --input "path/to/sheet.jpg"` from the repository root, verify the contact sheet visually, and start source searches for cards #01–#10. Keep all candidate matches unverified until composition is compared and source credited.
+
+### Evidence boundary
+
+This entry establishes a reproducible image-recovery plan, **not** identified source artwork. The next continuation must prioritize acquiring the actual pixels before asserting any image/artist correspondence.
