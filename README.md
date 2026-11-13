@@ -28,6 +28,8 @@ fields as [`expansions/poison-legacy.lua`](expansions/poison-legacy.lua).
 ## Repository layout
 
 - `tts/Global.lua` — self-contained Global script for multi-deck play.
+- `tts/legacy/` — recovered and cleaned-up Fate Deck and Challenge Bag object
+  scripts from the original Tabletop Simulator save.
 - `expansions/poison-legacy.lua` — editable Poison Legacy deck descriptor.
 - `tomes/poison-legacy/` — extracted rules, analysis, and editable 50-card
   CSV data recovered from the original Tabletop Simulator installation.
