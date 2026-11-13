@@ -4,3 +4,7 @@
 
 # Editor metadata
 .vscode/
+
+# Locally extracted reference crops and Python bytecode
+build/
+__pycache__/

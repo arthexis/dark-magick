@@ -70,3 +70,29 @@ When a real sheet is recovered, run `python tools/poison_chalice_extract_referen
 ### Evidence boundary
 
 This entry establishes a reproducible image-recovery plan, **not** identified source artwork. The next continuation must prioritize acquiring the actual pixels before asserting any image/artist correspondence.
+
+## Pass 3 - 2026-11-12, 18:xx Monterrey (local cache recovery and extraction)
+
+The authentic original face sheet was recovered read-only from the local
+Tabletop Simulator image cache. Its cached filename contains both the recorded
+UGC id `1679241899324398994` and path hash
+`5C11A2D50C1A71340C770FB2C516286AC37727DF`, matching the Poison Legacy
+descriptor exactly.
+
+- SHA-256: `1a6070c3aadcc219b387fe46f8423f65b1282d00c6bccfbfc1740807c14c02c1`
+- Dimensions: `4180 x 4095` pixels
+- Layout validated: 10 columns x 7 rows
+- Reference extraction: 50 full-card crops (`418 x 585` each), numbered
+  `card-01.png` through `card-50.png`, plus a contact sheet and manifest.
+- Cache safety: the cached source was read only; no Tabletop Simulator cache
+  file was changed.
+
+The generated references are local and uncommitted. A visual check of the
+contact sheet confirmed that cards 01 through 50 correspond sequentially with
+the tracker rows. They are composite cards rather than clean artworks.
+
+This resolves the source-image blocker only. No reverse-image comparison has
+yet established a source artwork, artist, resolution, or rights status:
+**exact = 0; probable = 0; ready for visual comparison = 50**. The next pass
+must inspect each art area and compare it with externally attributable sources
+before recording any candidate as probable or exact.
