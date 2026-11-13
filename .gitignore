@@ -1,0 +1,6 @@
+# Tabletop Simulator local saves and caches
+*.tmp
+*.log
+
+# Editor metadata
+.vscode/
